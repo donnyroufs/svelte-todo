@@ -44,7 +44,7 @@
   };
 </script>
 
-<div class="mx-auto w-1/3">
+<div class="mx-auto w-screen flex flex-col items-center">
   <Header on:add-todo={addTodo} />
   <TodoList
     {todos}

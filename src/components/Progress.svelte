@@ -2,7 +2,7 @@
   export let percentage;
 </script>
 
-<div class="w-full mt-12">
+<div class="mt-12 w-2/3">
   <div class="mb-2">Progress</div>
   <div class="shadow w-full bg-grey-light">
     <div

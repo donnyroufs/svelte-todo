@@ -19,14 +19,16 @@
     .sort((a, b) => a.completed - b.completed);
 </script>
 
-<div class="border-b-2 border-gray-200">
-  <Radio label="all" bind:options />
-  <Radio label="complete" bind:options />
-  <Radio label="incomplete" bind:options />
-</div>
+<main class="w-2/3">
+  <div class="border-b-2 border-gray-200">
+    <Radio label="all" bind:options />
+    <Radio label="complete" bind:options />
+    <Radio label="incomplete" bind:options />
+  </div>
 
-<ul class="mt-8">
-  {#each filtered as todo}
-    <Todo {...todo} on:toggle-todo on:delete-todo />
-  {/each}
-</ul>
+  <ul class="mt-8">
+    {#each filtered as todo}
+      <Todo {...todo} on:toggle-todo on:delete-todo />
+    {/each}
+  </ul>
+</main>
