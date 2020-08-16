@@ -10,7 +10,7 @@
     .filter((todo) => {
       if (options === "complete") {
         if (todo.completed) return todo;
-      } else if (options === "uncomplete") {
+      } else if (options === "incomplete") {
         if (!todo.completed) return todo;
       } else {
         return todo;
@@ -22,7 +22,7 @@
 <div class="border-b-2 border-gray-200">
   <Radio label="all" bind:options />
   <Radio label="complete" bind:options />
-  <Radio label="uncomplete" bind:options />
+  <Radio label="incomplete" bind:options />
 </div>
 
 <ul class="mt-8">

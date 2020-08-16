@@ -29,7 +29,7 @@
       class="py-2 px-4 bg-indigo-300 hover:bg-indigo-200 text-indigo-800 mr-3
       rounded focus:outline-none"
       on:click={onToggle}>
-      {completed ? 'uncomplete' : 'complete'}
+      {completed ? 'incomplete' : 'complete'}
     </button>
     <button
       class="py-2 px-4 focus:outline-none bg-red-300 hover:bg-red-200
