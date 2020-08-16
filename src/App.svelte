@@ -9,7 +9,7 @@
 
   $: getPercentage = () => {
     let completed = todos.filter((todo) => todo.completed);
-    return (completed.length / todos.length) * 100;
+    return todos.length > 0 ? (completed.length / todos.length) * 100 : 100;
   };
 
   onMount(async () => {
